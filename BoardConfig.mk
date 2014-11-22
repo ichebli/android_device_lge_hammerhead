@@ -156,6 +156,9 @@ COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
 
+# Enable workaround for slow rom flash
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
